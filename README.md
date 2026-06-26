@@ -140,6 +140,7 @@ Each loudspeaker lives in its own repository. A build repository contains only b
 * CAD
 * bill of materials
 * DSP presets
+* design research and simulations
 * measurements
 * validation data
 * build paths

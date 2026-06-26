@@ -31,26 +31,31 @@ Build repositories only contain build-specific information.
 
 # Repository structure
 
-Every build should follow roughly the same structure.
+Every build follows roughly the same structure.
+
+A build starts small and grows. Early on, a README and a single documented path are enough. The rest is added as the build matures.
 
 ```text
-README.md
+README.md              # always
 
-REFERENCE_BUILD.md
-DECISION_MODEL.md
-BUILD_PATHS.md
+REFERENCE_BUILD.md     # once a reference build is defined
+BUILD_PATHS.md         # once more than one path exists
+DECISION_MODEL.md      # build-specific extensions, once options diverge
 
 enclosure/
 dsp/
 bom/
-measurements/
-validation/
+research/              # exploration, simulation, design notes
+measurements/          # raw measured data
+validation/            # later: confirmation the reference build meets its targets
 docs/
 ```
 
-Not every project will need every directory.
+Not every project needs every file or directory.
 
-The goal is consistency, not rigidity.
+Most early builds only need a README, one build path and some research.
+
+The goal is consistency, not rigidity. Add structure when the project earns it, not before.
 
 ---
 
@@ -71,11 +76,13 @@ General FUNDAMENT philosophy should be linked, not duplicated.
 
 # Reference build
 
-Every build should define one official reference implementation.
+Every build should eventually define one official reference implementation.
 
 This is the combination measured, validated and documented by the project.
 
-Additional build paths may exist.
+Early on, the reference build can be described directly in the README. A dedicated REFERENCE_BUILD.md becomes useful once that description outgrows it.
+
+Additional build paths may exist later.
 
 The reference build always remains the baseline.
 
@@ -83,7 +90,9 @@ The reference build always remains the baseline.
 
 # Decision model
 
-Every build should document why different options exist.
+Once a build offers more than one option, it should document why those options exist.
+
+A build with a single path does not need this yet. It becomes useful as soon as the choices begin to diverge.
 
 Not every user wants the same thing.
 
@@ -106,6 +115,8 @@ The goal is to document validated choices and the tradeoffs between them.
 
 People build systems, not individual parts.
 
+With a single path, the reference build is the only path, and the README is enough. A dedicated BUILD_PATHS.md becomes useful once a second path exists.
+
 Whenever practical, repositories should document complete build paths rather than isolated components.
 
 Examples:
@@ -125,18 +136,19 @@ Each build path should explain:
 
 ---
 
-# Validation
+# Research and validation
 
-Engineering decisions should be supported by measurements whenever practical.
+These are two different activities, and they belong to different stages.
 
-Validation data should remain with the repository.
+**Research** is exploratory. It is the work done while a build is still being figured out: driver comparisons, box simulations, modelling, design notes, dead ends. Early builds are almost entirely research. This lives in `research/`.
 
-Whenever possible, include:
+**Validation** is confirmation. It is the evidence that the finished reference build meets its documented targets: final measurements against the stated goals, revision history, sign-off. This is a later-stage activity. It lives in `validation/`, and an early build will not have it yet.
 
-* measurements
-* simulations
-* design notes
-* revision history
+Validation is not limited to the project's own measurements. Independent reproductions by other builders — someone following the published plans and confirming the same results — are among the strongest validation a build can have. Those contributed builds and measurements belong in `validation/` too.
+
+Raw measured data lives in `measurements/` and can feed either.
+
+Whatever stage a build is at, the supporting data should stay in the repository rather than in forum threads or private files.
 
 Future contributors should understand not only what changed, but why.
 
