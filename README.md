@@ -1,8 +1,17 @@
 # FUNDAMENT
 
-**Open-source, fully measured loudspeaker design.**
+[Website](#) · [Community](https://www.audiosciencereview.com/forum/index.php?threads/fundament-an-open-source-fully-documented-subwoofer-platform-build-001-sealed-18%E2%80%B3-bms-18n862-fa502.72012/) · [Current builds](#current-builds) · [Principles](#core-principles)
 
-Reference-level audio hardware that is modular, validated, documented, measurable, repairable and reproducible, and built to stay that way. No black boxes.
+---
+
+**Open-source, fully measured loudspeaker design.** 
+
+Reference-level audio hardware that is modular, validated, documented, measurable, repairable and reproducible, and built to stay that way. 
+
+Open by design. Enhanceable and modular, based on needs.
+They can be either fully built DIY, commissioned locally, or — where available — built to order.
+
+Serious loudspeakers without black-box lock-in.
 
 ---
 
@@ -22,13 +31,44 @@ The platform is the method. Each loudspeaker is a build on top of it.
 
 # What FUNDAMENT is (and isn't)
 
-FUNDAMENT is **not** a loudspeaker manufacturer. It is an open engineering platform.
+FUNDAMENT is an open engineering platform for modular loudspeaker systems.
+
+It is **not** a closed loudspeaker brand. The engineering is public first: enclosure design, driver selection, DSP & Amp selection and settings, measurements, BOMs, revision history and build paths remain open.
+
+Some FUNDAMENT builds may also be available as built-to-order systems. Buying one is a convenience path, not a paywall around the design.
 
 Individual repositories (S18, S15, M8C and so on) implement specific loudspeaker designs using the shared principles, documentation standards, measurement methodology and recommendation model defined by the platform.
 
 The goal is not simply to publish loudspeaker plans. The goal is to preserve engineering knowledge.
 
 ---
+
+# How can I own a FUNDAMENT system?
+
+There are multiple ownership paths:
+
+| Path | For whom | What you get |
+|---|---|---|
+| **DIY build** | Builders, engineers, hobbyists | Plans, BOM, DSP files, measurements and validation data |
+| **Partial DIY / Partial BTO** | Half builder, half buyer | Buy a flat pack, do the DSP config on your own – or the other way around. You don't have to DIY everything |
+| **Local build / cabinetmaker** | People who want local sourcing | Same open design, built by someone near you |
+| **Built-to-order** | People who want a finished system | A completed FUNDAMENT build assembled to the published reference design |
+
+All paths use the same open engineering.  
+The difference is effort, not access.
+
+---
+
+# Current builds
+
+| Build                                          | Description                         | Status            |
+| ---------------------------------------------- | ----------------------------------- | ----------------- |
+| [**S18**](https://github.com/fundament-audio/S18) | Sealed 18″ reference subwoofer   | 🟡 Initial design |
+| **S15**                                        | Sealed 15″ reference subwoofer      | ⚪ Concept         |
+| **D12**                                        | Dual 12″ force-cancelling subwoofer | ⚪ Concept         |
+| **M8C**                                        | Active 4×8″ cardioid module         | ⚪ Concept         |
+
+--- 
 
 # Platform documents
 
@@ -52,6 +92,7 @@ Every build repository extends these documents rather than redefining them.
 Every FUNDAMENT build should be:
 
 * Open enclosure designs
+* Modularity in mind
 * Open DSP presets and protection filters
 * Measured using a published protocol
 * Revision controlled
@@ -61,6 +102,25 @@ Every FUNDAMENT build should be:
 * Reproducible
 
 If it isn't documented, measurable and reproducible, it isn't FUNDAMENT.
+
+## Why modular matters
+
+A conventional active subwoofer often becomes obsolete when one proprietary part fails.
+
+A FUNDAMENT build is designed as a serviceable platform:
+
+```text
+Cabinet
+  ├── Driver: replaceable / upgradable
+  ├── Amplifier: replaceable
+  ├── DSP: portable presets / documented filters
+  ├── Protection: documented, not hidden
+  ├── Finish: build-path dependent
+  └── Measurements: public baseline for future revisions
+```
+
+The cabinet should last decades.
+The electronics do not have to.
 
 ---
 
@@ -85,17 +145,6 @@ Each loudspeaker lives in its own repository. A build repository contains only b
 * build paths
 
 Everything that applies to every loudspeaker stays in the platform documentation.
-
----
-
-# Current builds
-
-| Build                                          | Description                         | Status            |
-| ---------------------------------------------- | ----------------------------------- | ----------------- |
-| [**S18**](https://github.com/fundament-audio/S18) | Sealed 18″ reference subwoofer   | 🟡 Initial design |
-| **S15**                                        | Sealed 15″ reference subwoofer      | ⚪ Concept         |
-| **D12**                                        | Dual 12″ force-cancelling subwoofer | ⚪ Concept         |
-| **M8C**                                        | Active 4×8″ cardioid module         | ⚪ Concept         |
 
 ---
 

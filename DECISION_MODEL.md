@@ -17,6 +17,21 @@ This separation keeps the platform stable while allowing individual builds to ev
 
 The recommendation process should remain consistent even as drivers, amplifiers, DSP platforms and loudspeaker designs change over time.
 
+## How FUNDAMENT differs from a normal commercial speaker/(sub)woofer
+
+| Conventional speaker | FUNDAMENT |
+|---|---|
+| Potentially passive components | Everything aimed at fully active / dsp driven system  |
+| Closed DSP | Public DSP targets and presets |
+| Proprietary plate amp dependency | Replaceable amp/DSP paths |
+| Unknown protection filters | Documented protection strategy |
+| Hard to reproduce | Published plans, BOM and measurements |
+| Product ends when parts disappear | Build paths can be revised |
+| Buy finished or nothing | DIY, local build, flatpack/cabinet, or built-to-order |
+
+FUNDAMENT is not anti-commercial.  
+It is anti-lock-in.
+
 ---
 
 # Start with the user
