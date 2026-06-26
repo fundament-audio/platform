@@ -4,7 +4,7 @@
 
 ---
 
-**Open-source, fully measured loudspeaker design.** 
+**Open-source, modular, fully measured loudspeaker design.** 
 
 Reference-level audio hardware that is modular, validated, documented, measurable, repairable and reproducible, and built to stay that way. 
 
@@ -17,29 +17,28 @@ Serious loudspeakers without black-box lock-in.
 
 # What is FUNDAMENT?
 
-FUNDAMENT is a community-driven platform for open loudspeaker design. It exists to make reference-level loudspeaker engineering transparent, modular, reproducible and buildable anywhere in the world.
+FUNDAMENT is a community-driven platform for **open and modular loudspeaker design** — reference-level engineering made transparent, modular, and reproducible anywhere in the world.
 
-Good loudspeakers are often hard or expensive to get hold of, and serious subwoofers most of all. Shipping heavy cabinets internationally, import duties, VAT, limited local availability and manufacturer lock-in put many of today's best designs out of reach for much of the community.
+It solves two problems at once:
 
-At the same time, plenty of excellent DIY designs already exist. The engineering behind them is usually scattered across forum threads, personal websites and image hosts that eventually disappear, so valuable knowledge is easily lost.
+- **Great speakers are hard to get.** Heavy cabinets, international shipping, import duties, VAT, thin local availability and manufacturer lock-in put today's best designs out of reach for much of the community.
+- **Great DIY knowledge gets lost.** The engineering behind excellent DIY designs is scattered across forum threads, personal sites and image hosts that eventually vanish.
 
-FUNDAMENT exists to solve both problems. We take known-good engineering, document it properly, validate it openly and publish it as complete, reproducible reference designs.
+FUNDAMENT fixes both: we take known-good engineering, document it properly, validate it openly, and publish it as complete, reproducible reference designs.
 
-The platform is the method. Each loudspeaker is a build on top of it.
+**The platform is the method. Each loudspeaker is a build on top of it.**
 
----
+### Public first
 
-# What FUNDAMENT is (and isn't)
+Everything that matters stays open: enclosure design, driver selection, DSP & amp choices and settings, measurements, BOMs, revision history and build paths.
 
-FUNDAMENT is an open engineering platform for modular loudspeaker systems.
+### Not a closed brand
 
-It is **not** a closed loudspeaker brand. The engineering is public first: enclosure design, driver selection, DSP & Amp selection and settings, measurements, BOMs, revision history and build paths remain open.
+Some builds may be offered built-to-order — that's a **convenience path, not a paywall** around the design. The engineering stays open either way.
 
-Some FUNDAMENT builds may also be available as built-to-order systems. Buying one is a convenience path, not a paywall around the design.
+Individual repos (S18, S15, M8C…) each implement a specific design on the shared principles, documentation standards, measurement methodology and recommendation model the platform defines.
 
-Individual repositories (S18, S15, M8C and so on) implement specific loudspeaker designs using the shared principles, documentation standards, measurement methodology and recommendation model defined by the platform.
-
-The goal is not simply to publish loudspeaker plans. The goal is to preserve engineering knowledge.
+**The goal isn't to publish plans. It's to preserve engineering knowledge — and make it buildable.**
 
 ---
 
